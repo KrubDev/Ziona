@@ -319,7 +319,7 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="banner-stats">
+      {/* <div className="banner-stats">
           {[
             { num: "2+", label: "Years Experience" },
             { num: "500+", label: "Happy Clients" },
@@ -330,7 +330,7 @@ const Banner = () => {
               <span className="stat-label">{label}</span>
             </div>
           ))}
-        </div>
+        </div>*/}
 
         <div className="banner-scroll-indicator">
           <span className="scroll-text">Scroll</span>

@@ -14,9 +14,9 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { to: "home", label: "Home", icon: <FiHome /> },
-    { to: "about", label: "About", icon: <FiUser /> },
-    { to: "services", label: "Services", icon: <GiScissors /> },
+    { to: "home", label: "Home", icon: <FiHome size={18} /> },
+    { to: "about", label: "About", icon: <FiUser size={18} /> },
+    { to: "services", label: "Services", icon: <GiScissors size={18} /> },
   ];
 
   return (
@@ -98,6 +98,10 @@ const Navbar = () => {
           padding-bottom: 4px;
         }
 
+        .nav-link:hover {
+          color: #f5e6c8;
+        }
+
         .nav-link::after {
           content: '';
           position: absolute;
@@ -107,10 +111,6 @@ const Navbar = () => {
           height: 1px;
           background: linear-gradient(90deg, #d4af37, #f5e6c8);
           transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .nav-link:hover {
-          color: #f5e6c8;
         }
 
         .nav-link:hover::after {
@@ -165,7 +165,7 @@ const Navbar = () => {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          gap: 2.5rem;
+          gap: 2rem;
           animation: fadeIn 0.3s ease;
         }
 
@@ -176,7 +176,7 @@ const Navbar = () => {
 
         .mobile-link {
           font-family: 'Cormorant Garamond', serif;
-          font-size: 2.5rem;
+          font-size: 1.2rem; /* fixed smaller size */
           font-weight: 300;
           color: rgba(245, 230, 200, 0.7);
           text-decoration: none;
@@ -185,7 +185,7 @@ const Navbar = () => {
           transition: all 0.3s;
           display: flex;
           align-items: center;
-          gap: 0.75rem;
+          gap: 0.5rem;
         }
 
         .mobile-link:hover { color: #d4af37; transform: translateX(8px); }

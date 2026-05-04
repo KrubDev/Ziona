@@ -233,9 +233,6 @@ const Navbar = () => {
         <div className="nav-inner">
           <div className="nav-logo">
             Zi<span className="logo-accent">ona</span>
-            {/*<span style={{ letterSpacing: "0" }}>
-              Zi<span style={{ color: "#d4af37" }}>ona</span>
-            </span>*/}
           </div>
 
           <div className="nav-links">

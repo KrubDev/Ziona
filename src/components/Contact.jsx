@@ -20,15 +20,15 @@ const Contact = () => {
 
   const services = useMemo(
     () => [
-      "Hair Styling",
-      "Facial Treatment",
-      "Manicure/Pedicure",
-      "Massage Therapy",
-      "Makeup Artistry",
-      "Hair Coloring",
-      "Waxing",
-      "Skin Care",
-      "Body Treatment",
+      "Classic Manicure & Pedicure",
+      "Gel Polish Manicure",
+      "Acrylic Nail Extensions",
+      "Bridal Nail & Lash Glam",
+      "Classic Lash Extensions",
+      "Volume Lash Extensions ",
+      "Hybrid Lash Extensions",
+      "Lash Lift & Tint",
+      "Hina",
       "Others",
     ],
     [],
@@ -451,7 +451,7 @@ const Contact = () => {
                   <input
                     type="tel"
                     className="field-input"
-                    placeholder="10-digit number"
+                    placeholder="Phone number"
                     value={phone}
                     onChange={(e) =>
                       setPhone(e.target.value.replace(/\D/g, "").slice(0, 10))
